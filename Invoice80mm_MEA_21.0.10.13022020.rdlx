@@ -1,0 +1,1877 @@
+﻿<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition">
+	<Body>
+		<ColumnSpacing>1.5cm</ColumnSpacing>
+		<Height>15cm</Height>
+		<ReportItems>
+			<Textbox Name="TextBox11">
+				<DataElementName>TextBox1</DataElementName>
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<FontWeight>600</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>5.3cm</Top>
+				<Value>Reg :</Value>
+				<Width>0.9cm</Width>
+			</Textbox>
+			<Textbox Name="TextBox46">
+				<Height>0.5cm</Height>
+				<Left>2.782917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<Format>c</Format>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Left</TextAlign>
+				</Style>
+				<Top>13cm</Top>
+				<Value>=First(Fields!strVATFormatted.Value, "dsEnt_Invoice1")</Value>
+				<Width>3.3866cm</Width>
+				<ZIndex>46</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox44">
+				<Height>0.5cm</Height>
+				<Left>2.782917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<Format>c</Format>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Left</TextAlign>
+				</Style>
+				<Top>13.6cm</Top>
+				<Value>=First(Fields!strSubFormated.Value, "dsEnt_Invoice1")</Value>
+				<Width>3.3866cm</Width>
+				<ZIndex>45</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox28">
+				<Height>0.5cm</Height>
+				<Left>1.282917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>5.3cm</Top>
+				<Value>=Parameters!CoCK.Value</Value>
+				<Width>1.9579cm</Width>
+				<ZIndex>34</ZIndex>
+			</Textbox>
+			<Textbox Name="Text31">
+				<Height>0.24in</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<BackgroundColor>White</BackgroundColor>
+					<FontSize>12pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<TextAlign>Left</TextAlign>
+					<VerticalAlign>Middle</VerticalAlign>
+				</Style>
+				<Top>7.600001cm</Top>
+				<Value>Cashier :</Value>
+				<Width>0.7874in</Width>
+			</Textbox>
+			<Textbox Name="TextBox6">
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>3.4cm</Top>
+				<Value>=Parameters!CoCity.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>28</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox12">
+				<DataElementName>TextBox1</DataElementName>
+				<Height>0.5cm</Height>
+				<Left>3.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>5.3cm</Top>
+				<Value>VAT :</Value>
+				<Width>1.0515cm</Width>
+			</Textbox>
+			<Textbox Name="TextBox23">
+				<DataElementName>TextBox1</DataElementName>
+				<Height>0.5cm</Height>
+				<Left>0.582917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>13.6cm</Top>
+				<Value>Total Excl :</Value>
+				<Width>2.1cm</Width>
+			</Textbox>
+			<Textbox Name="TextBox29">
+				<Height>0.75cm</Height>
+				<Style>
+					<FontWeight>800</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<Value>=Parameters!Title.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>39</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox25">
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>4cm</Top>
+				<Value>=Parameters!CoPhone1.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>31</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox22">
+				<DataElementName>TextBox1</DataElementName>
+				<Height>0.5016cm</Height>
+				<Left>0.582917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>13cm</Top>
+				<Value>VAT :</Value>
+				<Width>2.1cm</Width>
+				<ZIndex>56</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox3">
+				<Height>0.7cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>12pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<VerticalAlign>Middle</VerticalAlign>
+				</Style>
+				<Top>1.4cm</Top>
+				<Value>=Parameters!CoName.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>25</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox48">
+				<Height>0.8cm</Height>
+				<Left>2.582917cm</Left>
+				<Style>
+					<FontSize>16pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<Format>c</Format>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Left</TextAlign>
+				</Style>
+				<Top>4.330709in</Top>
+				<Value>=First(Fields!strTotFormatted.Value, "dsEnt_Invoice1")</Value>
+				<Width>4.8cm</Width>
+				<ZIndex>47</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox41">
+				<Height>0.24in</Height>
+				<Left>2.382917cm</Left>
+				<Style>
+					<FontSize>12pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<VerticalAlign>Middle</VerticalAlign>
+				</Style>
+				<Top>7.600001cm</Top>
+				<Value>=First(Fields!strUserName.Value, "dsEnt_Invoice1")</Value>
+				<Width>5cm</Width>
+				<ZIndex>42</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox4">
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>2.2cm</Top>
+				<Value>=Parameters!CoAddress1.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>26</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox39">
+				<Height>0.5cm</Height>
+				<Left>1.6cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<VerticalAlign>Middle</VerticalAlign>
+				</Style>
+				<Top>6.8cm</Top>
+				<Value>=Fields!strInvDocID.Value</Value>
+				<Width>5.6cm</Width>
+				<ZIndex>40</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox8">
+				<Height>0.5cm</Height>
+				<Left>1.982917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>2.8cm</Top>
+				<Value>=Parameters!CoPostal.Value</Value>
+				<Width>5.4cm</Width>
+				<ZIndex>30</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox27">
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>4.6cm</Top>
+				<Value>=Parameters!CoEmail.Value</Value>
+				<Width>7cm</Width>
+				<ZIndex>33</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox30">
+				<DataElementName>TextBox29</DataElementName>
+				<Height>0.5cm</Height>
+				<Left>4.444617cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>5.3cm</Top>
+				<Value>=Parameters!CoVAT.Value</Value>
+				<Width>2.5cm</Width>
+				<ZIndex>35</ZIndex>
+			</Textbox>
+			<Textbox Name="Text29">
+				<Height>0.5cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<BackgroundColor>White</BackgroundColor>
+					<FontSize>11pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<TextAlign>Left</TextAlign>
+					<VerticalAlign>Middle</VerticalAlign>
+				</Style>
+				<Top>6.8cm</Top>
+				<Value># :</Value>
+				<Width>0.4004in</Width>
+			</Textbox>
+			<Textbox Name="TextBox51">
+				<CanGrow>true</CanGrow>
+				<Height>0.65cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>12.2cm</Top>
+				<Value>=First(Fields!strNotes.Value, "dsEnt_Invoice1")</Value>
+				<Width>6.5617cm</Width>
+				<ZIndex>51</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox16">
+				<CanGrow>true</CanGrow>
+				<Height>0.5cm</Height>
+				<Left>0.582917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>14.2cm</Top>
+				<Value>Discount :</Value>
+				<Width>2.1cm</Width>
+				<ZIndex>55</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox17">
+				<CanGrow>true</CanGrow>
+				<Height>0.5cm</Height>
+				<Left>2.782917cm</Left>
+				<Style>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Left</TextAlign>
+				</Style>
+				<Top>14.2cm</Top>
+				<Value>=Parameters!CoCurrency.Value &amp; " " &amp; iif((IsNothing(Sum(Fields!decLineTotInc.Value, "dsEnt_Invoice5") )) ,"0.00",FormatNumber(Sum(Fields!decLineTotInc.Value, "dsEnt_Invoice5"),2))</Value>
+				<Width>3.3866cm</Width>
+				<ZIndex>54</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox13">
+				<CanGrow>true</CanGrow>
+				<Height>0.6cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<Format>f</Format>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Left</TextAlign>
+				</Style>
+				<Top>8.4cm</Top>
+				<Value>=Globals!ExecutionTime</Value>
+				<Width>7cm</Width>
+				<ZIndex>57</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox14">
+				<CanGrow>true</CanGrow>
+				<Height>0.8cm</Height>
+				<Left>0.582917cm</Left>
+				<Style>
+					<FontSize>16pt</FontSize>
+					<FontWeight>700</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>11cm</Top>
+				<Value>Total :</Value>
+				<Width>2cm</Width>
+				<ZIndex>58</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox2">
+				<DataElementName>TextBox1</DataElementName>
+				<Height>0.527cm</Height>
+				<Left>0.4cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<FontWeight>600</FontWeight>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+				</Style>
+				<Top>2.8cm</Top>
+				<Value>P.O. Box:</Value>
+				<Width>1.5829cm</Width>
+			</Textbox>
+			<Line Name="Line1">
+				<Height>0cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<BorderStyle>
+						<Default>Dash</Default>
+					</BorderStyle>
+				</Style>
+				<Top>6.2cm</Top>
+				<Width>7cm</Width>
+				<ZIndex>59</ZIndex>
+			</Line>
+			<Line Name="Line3">
+				<Height>0cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<BorderStyle>
+						<Default>Dash</Default>
+					</BorderStyle>
+				</Style>
+				<Top>10.8cm</Top>
+				<Width>7cm</Width>
+				<ZIndex>62</ZIndex>
+			</Line>
+			<Line Name="Line4">
+				<Height>0cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<BorderStyle>
+						<Default>Dash</Default>
+					</BorderStyle>
+				</Style>
+				<Top>12cm</Top>
+				<Width>7cm</Width>
+				<ZIndex>63</ZIndex>
+			</Line>
+			<Line Name="Line5">
+				<Height>0cm</Height>
+				<Style>
+					<BorderStyle>
+						<Default>Dash</Default>
+					</BorderStyle>
+				</Style>
+				<Top>1cm</Top>
+				<Width>7cm</Width>
+				<ZIndex>64</ZIndex>
+			</Line>
+			<Table Name="Table1">
+				<DataSetName>dsEnt_Invoice2</DataSetName>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>0.8cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox10">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BorderColor>
+													<Default>Silver</Default>
+												</BorderColor>
+												<BorderStyle>
+													<Bottom>Dashed</Bottom>
+													<Top>Dashed</Top>
+												</BorderStyle>
+												<FontSize>8pt</FontSize>
+												<Format>N</Format>
+												<PaddingBottom>4pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>4pt</PaddingTop>
+												<TextAlign>Left</TextAlign>
+											</Style>
+											<Value>=Fields!decQty.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox15">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BorderColor>
+													<Default>Silver</Default>
+												</BorderColor>
+												<BorderStyle>
+													<Bottom>Dashed</Bottom>
+													<Top>Dashed</Top>
+												</BorderStyle>
+												<FontSize>8pt</FontSize>
+												<PaddingBottom>4pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>4pt</PaddingTop>
+											</Style>
+											<Value>=Fields!strPartDesc.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TextBox18">
+											<CanGrow>true</CanGrow>
+											<Style>
+												<BorderColor>
+													<Default>Silver</Default>
+												</BorderColor>
+												<BorderStyle>
+													<Bottom>Dashed</Bottom>
+													<Top>Dashed</Top>
+												</BorderStyle>
+												<FontSize>8pt</FontSize>
+												<Format>n</Format>
+												<PaddingBottom>4pt</PaddingBottom>
+												<PaddingLeft>2pt</PaddingLeft>
+												<PaddingRight>2pt</PaddingRight>
+												<PaddingTop>4pt</PaddingTop>
+											</Style>
+											<Value>=Fields!decLineTotInc.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<Height>0.8cm</Height>
+				<Left>0.382917cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+				</Style>
+				<TableColumns>
+					<TableColumn>
+						<Width>1.655793cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>2.623845cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>2.620362cm</Width>
+					</TableColumn>
+				</TableColumns>
+				<Top>9.4cm</Top>
+				<Width>6.9cm</Width>
+				<ZIndex>61</ZIndex>
+			</Table>
+		</ReportItems>
+	</Body>
+	<PageFooter>
+		<Height>5.2cm</Height>
+		<PrintOnLastPage>true</PrintOnLastPage>
+		<ReportItems>
+			<Textbox Name="TextBox1">
+				<CanGrow>true</CanGrow>
+				<Height>0.5cm</Height>
+				<Left>0.4cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<Top>1.2cm</Top>
+				<Value>Powered by Palladium Software (Pty) Ltd®</Value>
+				<Width>6.9cm</Width>
+				<ZIndex>1</ZIndex>
+			</Textbox>
+			<Textbox Name="TextBox5">
+				<CanGrow>true</CanGrow>
+				<Height>0.5cm</Height>
+				<Left>0.4cm</Left>
+				<Style>
+					<FontSize>8pt</FontSize>
+					<PaddingBottom>2pt</PaddingBottom>
+					<PaddingLeft>2pt</PaddingLeft>
+					<PaddingRight>2pt</PaddingRight>
+					<PaddingTop>2pt</PaddingTop>
+					<TextAlign>Center</TextAlign>
+				</Style>
+				<Top>0.6cm</Top>
+				<Value>©2019 www.mustek.co.ke </Value>
+				<Width>6.9cm</Width>
+				<ZIndex>2</ZIndex>
+			</Textbox>
+			<Rectangle Name="Container1">
+				<Height>2.6cm</Height>
+				<Left>0.4cm</Left>
+				<Style>
+					<BorderColor>
+						<Default>Silver</Default>
+					</BorderColor>
+					<BorderStyle>
+						<Default>Dotted</Default>
+					</BorderStyle>
+				</Style>
+				<Top>2.2cm</Top>
+				<Width>6.8cm</Width>
+				<ZIndex>4</ZIndex>
+			</Rectangle>
+		</ReportItems>
+	</PageFooter>
+	<BottomMargin>1.5cm</BottomMargin>
+	<PageHeight>29.7cm</PageHeight>
+	<PageWidth>8cm</PageWidth>
+	<Width>8cm</Width>
+	<ReportParameters>
+		<ReportParameter Name="CoName">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoName</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoAddress1">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoAddress1</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoAddress2">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoAddress2</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoCity">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoCity</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoProvince">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoProvince</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoPostal">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoPostal</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoPhone1">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoPhone1</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoFax">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoFax</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoEmail">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoEmail</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoCK">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoCK</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoVAT">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoVAT</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="SQDocNumber">
+			<DataType>String</DataType>
+			<Prompt>SQDocNumber</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="SQCustName">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>SQCustName</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="SQLocationCriteria">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>SQLocationCriteria</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="CoCurrency">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>CoCurrency</Prompt>
+		</ReportParameter>
+		<ReportParameter Name="Title">
+			<DataType>String</DataType>
+			<Nullable>true</Nullable>
+			<Prompt>Title</Prompt>
+		</ReportParameter>
+	</ReportParameters>
+	<DataSources>
+		<DataSource Name="EntInvoice">
+			<ConnectionProperties>
+				<ConnectString>password=tatva123;data source=PCA108\SQL2014;initial catalog=paldbSampleEnterprise;user id=sa;</ConnectString>
+				<DataProvider>SQL</DataProvider>
+			</ConnectionProperties>
+		</DataSource>
+	</DataSources>
+	<DataSets>
+		<DataSet Name="dsEnt_Invoice1">
+			<Fields>
+				<Field Name="strInvDocID">
+					<DataField>strInvDocID</DataField>
+				</Field>
+				<Field Name="lngInvTrackID">
+					<DataField>lngInvTrackID</DataField>
+				</Field>
+				<Field Name="lngJourID">
+					<DataField>lngJourID</DataField>
+				</Field>
+				<Field Name="dteSystemDate">
+					<DataField>dteSystemDate</DataField>
+				</Field>
+				<Field Name="dteJournalDate">
+					<DataField>dteJournalDate</DataField>
+				</Field>
+				<Field Name="dteRequired">
+					<DataField>dteRequired</DataField>
+				</Field>
+				<Field Name="strUserName">
+					<DataField>strUserName</DataField>
+				</Field>
+				<Field Name="strCustName">
+					<DataField>strCustName</DataField>
+				</Field>
+				<Field Name="strSoldTo">
+					<DataField>strSoldTo</DataField>
+				</Field>
+				<Field Name="strShipTo">
+					<DataField>strShipTo</DataField>
+				</Field>
+				<Field Name="strReference">
+					<DataField>strReference</DataField>
+				</Field>
+				<Field Name="decSubTotal">
+					<DataField>decSubTotal</DataField>
+				</Field>
+				<Field Name="decVAT">
+					<DataField>decVAT</DataField>
+				</Field>
+				<Field Name="decTotal">
+					<DataField>decTotal</DataField>
+				</Field>
+				<Field Name="bitFromSO">
+					<DataField>bitFromSO</DataField>
+				</Field>
+				<Field Name="strOrdDocID">
+					<DataField>strOrdDocID</DataField>
+				</Field>
+				<Field Name="bitHistoryTrans">
+					<DataField>bitHistoryTrans</DataField>
+				</Field>
+				<Field Name="strNotes">
+					<DataField>strNotes</DataField>
+				</Field>
+				<Field Name="bitPrinted">
+					<DataField>bitPrinted</DataField>
+				</Field>
+				<Field Name="bitEmailed">
+					<DataField>bitEmailed</DataField>
+				</Field>
+				<Field Name="intPaidBy">
+					<DataField>intPaidBy</DataField>
+				</Field>
+				<Field Name="intAccount">
+					<DataField>intAccount</DataField>
+				</Field>
+				<Field Name="strSalesName">
+					<DataField>strSalesName</DataField>
+				</Field>
+				<Field Name="strAddInfo">
+					<DataField>strAddInfo</DataField>
+				</Field>
+				<Field Name="bitReserved">
+					<DataField>bitReserved</DataField>
+				</Field>
+				<Field Name="strCurrency">
+					<DataField>strCurrency</DataField>
+				</Field>
+				<Field Name="bitIsForeign">
+					<DataField>bitIsForeign</DataField>
+				</Field>
+				<Field Name="decSubTotalF">
+					<DataField>decSubTotalF</DataField>
+				</Field>
+				<Field Name="decVATF">
+					<DataField>decVATF</DataField>
+				</Field>
+				<Field Name="decTotalF">
+					<DataField>decTotalF</DataField>
+				</Field>
+				<Field Name="decExchange">
+					<DataField>decExchange</DataField>
+				</Field>
+				<Field Name="strTerm">
+					<DataField>strTerm</DataField>
+				</Field>
+				<Field Name="intDept">
+					<DataField>intDept</DataField>
+				</Field>
+				<Field Name="strField1">
+					<DataField>strField1</DataField>
+				</Field>
+				<Field Name="strField2">
+					<DataField>strField2</DataField>
+				</Field>
+				<Field Name="strField3">
+					<DataField>strField3</DataField>
+				</Field>
+				<Field Name="strField4">
+					<DataField>strField4</DataField>
+				</Field>
+				<Field Name="strField5">
+					<DataField>strField5</DataField>
+				</Field>
+				<Field Name="strField6">
+					<DataField>strField6</DataField>
+				</Field>
+				<Field Name="strField7">
+					<DataField>strField7</DataField>
+				</Field>
+				<Field Name="strField8">
+					<DataField>strField8</DataField>
+				</Field>
+				<Field Name="strField9">
+					<DataField>strField9</DataField>
+				</Field>
+				<Field Name="strField10">
+					<DataField>strField10</DataField>
+				</Field>
+				<Field Name="strField11">
+					<DataField>strField11</DataField>
+				</Field>
+				<Field Name="strField12">
+					<DataField>strField12</DataField>
+				</Field>
+				<Field Name="strSubFormated">
+					<DataField>strSubFormated</DataField>
+				</Field>
+				<Field Name="strVATFormatted">
+					<DataField>strVATFormatted</DataField>
+				</Field>
+				<Field Name="strTotFormatted">
+					<DataField>strTotFormatted</DataField>
+				</Field>
+				<Field Name="dteField13">
+					<DataField>dteField13</DataField>
+				</Field>
+				<Field Name="dteField14">
+					<DataField>dteField14</DataField>
+				</Field>
+				<Field Name="decDiscPerc">
+					<DataField>decDiscPerc</DataField>
+				</Field>
+				<Field Name="decDiscAmt">
+					<DataField>decDiscAmt</DataField>
+				</Field>
+				<Field Name="decDiscAmtF">
+					<DataField>decDiscAmtF</DataField>
+				</Field>
+				<Field Name="strDiscFormatted">
+					<DataField>strDiscFormatted</DataField>
+				</Field>
+				<Field Name="strOrdFQDocID">
+					<DataField>strOrdFQDocID</DataField>
+				</Field>
+				<Field Name="strStatusTypeCode">
+					<DataField>strStatusTypeCode</DataField>
+				</Field>
+				<Field Name="strCNReasonCode">
+					<DataField>strCNReasonCode</DataField>
+				</Field>
+				<Field Name="bitBookmark">
+					<DataField>bitBookmark</DataField>
+				</Field>
+				<Field Name="dteSystemDateTime">
+					<DataField>dteSystemDateTime</DataField>
+				</Field>
+				<Field Name="strPaidBy">
+					<DataField>strPaidBy</DataField>
+				</Field>
+				<Field Name="intSentDoc">
+					<DataField>intSentDoc</DataField>
+				</Field>
+				<Field Name="strVAT">
+					<DataField>strVAT</DataField>
+				</Field>
+				<Field Name="strDelMethodCode">
+					<DataField>strDelMethodCode</DataField>
+				</Field>
+				<Field Name="decTotalWeight">
+					<DataField>decTotalWeight</DataField>
+				</Field>
+				<Field Name="decTotalVolWeight">
+					<DataField>decTotalVolWeight</DataField>
+				</Field>
+				<Field Name="decDeliveryCost">
+					<DataField>decDeliveryCost</DataField>
+				</Field>
+				<Field Name="decDeliveryCostF">
+					<DataField>decDeliveryCostF</DataField>
+				</Field>
+				<Field Name="strDeliveryCostFormatted">
+					<DataField>strDeliveryCostFormatted</DataField>
+				</Field>
+				<Field Name="bitShipmentsAuditTrail">
+					<DataField>bitShipmentsAuditTrail</DataField>
+				</Field>
+				<Field Name="intRevisionNumber">
+					<DataField>intRevisionNumber</DataField>
+				</Field>
+				<Field Name="strStoreNumber">
+					<DataField>strStoreNumber</DataField>
+				</Field>
+				<Field Name="strEDI">
+					<DataField>strEDI</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM tblInvoiceDoc WHERE strInvDocID = @SQDocNumber</CommandText>
+				<DataSourceName>EntInvoice</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="SQDocNumber">
+						<Value>=Parameters!SQDocNumber.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dsEnt_Invoice2">
+			<Fields>
+				<Field Name="strInvDocID">
+					<DataField>strInvDocID</DataField>
+				</Field>
+				<Field Name="intLineNo">
+					<DataField>intLineNo</DataField>
+				</Field>
+				<Field Name="strPartNumber">
+					<DataField>strPartNumber</DataField>
+				</Field>
+				<Field Name="strLocation">
+					<DataField>strLocation</DataField>
+				</Field>
+				<Field Name="strPartDesc">
+					<DataField>strPartDesc</DataField>
+				</Field>
+				<Field Name="decQty">
+					<DataField>decQty</DataField>
+				</Field>
+				<Field Name="strUnit">
+					<DataField>strUnit</DataField>
+				</Field>
+				<Field Name="intType">
+					<DataField>intType</DataField>
+				</Field>
+				<Field Name="decPriceEaExc">
+					<DataField>decPriceEaExc</DataField>
+				</Field>
+				<Field Name="decLineTotExc">
+					<DataField>decLineTotExc</DataField>
+				</Field>
+				<Field Name="decLineTaxAmt">
+					<DataField>decLineTaxAmt</DataField>
+				</Field>
+				<Field Name="decPriceEaInc">
+					<DataField>decPriceEaInc</DataField>
+				</Field>
+				<Field Name="decLineTotInc">
+					<DataField>decLineTotInc</DataField>
+				</Field>
+				<Field Name="strTaxCode">
+					<DataField>strTaxCode</DataField>
+				</Field>
+				<Field Name="imgTaxObj">
+					<DataField>imgTaxObj</DataField>
+				</Field>
+				<Field Name="strCurrency">
+					<DataField>strCurrency</DataField>
+				</Field>
+				<Field Name="bitIsForeign">
+					<DataField>bitIsForeign</DataField>
+				</Field>
+				<Field Name="decPriceEaExcF">
+					<DataField>decPriceEaExcF</DataField>
+				</Field>
+				<Field Name="decLineTotExcF">
+					<DataField>decLineTotExcF</DataField>
+				</Field>
+				<Field Name="decLineTaxAmtF">
+					<DataField>decLineTaxAmtF</DataField>
+				</Field>
+				<Field Name="decEaIncTaxF">
+					<DataField>decEaIncTaxF</DataField>
+				</Field>
+				<Field Name="decTotIncTaxF">
+					<DataField>decTotIncTaxF</DataField>
+				</Field>
+				<Field Name="strInvField1">
+					<DataField>strInvField1</DataField>
+				</Field>
+				<Field Name="strInvField2">
+					<DataField>strInvField2</DataField>
+				</Field>
+				<Field Name="strInvField3">
+					<DataField>strInvField3</DataField>
+				</Field>
+				<Field Name="strInvField4">
+					<DataField>strInvField4</DataField>
+				</Field>
+				<Field Name="strInvField5">
+					<DataField>strInvField5</DataField>
+				</Field>
+				<Field Name="strInvField6">
+					<DataField>strInvField6</DataField>
+				</Field>
+				<Field Name="strLineField1">
+					<DataField>strLineField1</DataField>
+				</Field>
+				<Field Name="strLineField2">
+					<DataField>strLineField2</DataField>
+				</Field>
+				<Field Name="strLineField3">
+					<DataField>strLineField3</DataField>
+				</Field>
+				<Field Name="strLineField4">
+					<DataField>strLineField4</DataField>
+				</Field>
+				<Field Name="strLineField5">
+					<DataField>strLineField5</DataField>
+				</Field>
+				<Field Name="strLineField6">
+					<DataField>strLineField6</DataField>
+				</Field>
+				<Field Name="strLineField7">
+					<DataField>strLineField7</DataField>
+				</Field>
+				<Field Name="strLineField8">
+					<DataField>strLineField8</DataField>
+				</Field>
+				<Field Name="strLineField9">
+					<DataField>strLineField9</DataField>
+				</Field>
+				<Field Name="strLineField10">
+					<DataField>strLineField10</DataField>
+				</Field>
+				<Field Name="strLineField11">
+					<DataField>strLineField11</DataField>
+				</Field>
+				<Field Name="strLineField12">
+					<DataField>strLineField12</DataField>
+				</Field>
+				<Field Name="decLineDiscPerc">
+					<DataField>decLineDiscPerc</DataField>
+				</Field>
+				<Field Name="decLineDiscAmt">
+					<DataField>decLineDiscAmt</DataField>
+				</Field>
+				<Field Name="decLineDiscAmtF">
+					<DataField>decLineDiscAmtF</DataField>
+				</Field>
+				<Field Name="bitDiscountTax">
+					<DataField>bitDiscountTax</DataField>
+				</Field>
+				<Field Name="decStockQty">
+					<DataField>decStockQty</DataField>
+				</Field>
+				<Field Name="strStockUnit">
+					<DataField>strStockUnit</DataField>
+				</Field>
+				<Field Name="decStandardCost">
+					<DataField>decStandardCost</DataField>
+				</Field>
+				<Field Name="decLastPPUnit">
+					<DataField>decLastPPUnit</DataField>
+				</Field>
+				<Field Name="strSalesName">
+					<DataField>strSalesName</DataField>
+				</Field>
+				<Field Name="decCOGS">
+					<DataField>decCOGS</DataField>
+				</Field>
+				<Field Name="decSOQty">
+					<DataField>decSOQty</DataField>
+				</Field>
+				<Field Name="decSOQtyRemain">
+					<DataField>decSOQtyRemain</DataField>
+				</Field>
+				<Field Name="strPartExtendedDesc">
+					<DataField>strPartExtendedDesc</DataField>
+				</Field>
+				<Field Name="decItemWeight">
+					<DataField>decItemWeight</DataField>
+				</Field>
+				<Field Name="decVolumetricWeight">
+					<DataField>decVolumetricWeight</DataField>
+				</Field>
+				<Field Name="bitContainerItem">
+					<DataField>bitContainerItem</DataField>
+				</Field>
+				<Field Name="bitDelCost">
+					<DataField>bitDelCost</DataField>
+				</Field>
+				<Field Name="intBillingMethod">
+					<DataField>intBillingMethod</DataField>
+				</Field>
+				<Field Name="uidTransactionFieldID">
+					<DataField>uidTransactionFieldID</DataField>
+				</Field>
+				<Field Name="uidContainerItem">
+					<DataField>uidContainerItem</DataField>
+				</Field>
+				<Field Name="decUsedQty">
+					<DataField>decUsedQty</DataField>
+				</Field>
+				<Field Name="strProjNumber">
+					<DataField>strProjNumber</DataField>
+				</Field>
+				<Field Name="strProjName">
+					<DataField>strProjName</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT tblInvoiceDocDT.*, tblInvoiceDocDTPrj.strProjNumber, tblProjects.strProjName FROM tblInvoiceDocDT LEFT JOIN tblInvoiceDocDTPrj ON tblInvoiceDocDT.strInvDocID = tblInvoiceDocDTPrj.strInvDocID AND tblInvoiceDocDT.intLineNo = tblInvoiceDocDTPrj.intLineNo LEFT JOIN tblProjects ON tblInvoiceDocDTPrj.strProjNumber = tblProjects.strProjNumber WHERE tblInvoiceDocDT.strInvDocID = @SQDocNumber and  bitDiscountTax = 0 ORDER BY tblInvoiceDocDT.intLineNo
+</CommandText>
+				<DataSourceName>EntInvoice</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="SQDocNumber">
+						<Value>=Parameters!SQDocNumber.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dsEnt_Invoice3">
+			<Fields>
+				<Field Name="strCustName">
+					<DataField>strCustName</DataField>
+				</Field>
+				<Field Name="strStreet1">
+					<DataField>strStreet1</DataField>
+				</Field>
+				<Field Name="strStreet2">
+					<DataField>strStreet2</DataField>
+				</Field>
+				<Field Name="strCity">
+					<DataField>strCity</DataField>
+				</Field>
+				<Field Name="strProvince">
+					<DataField>strProvince</DataField>
+				</Field>
+				<Field Name="strPostal">
+					<DataField>strPostal</DataField>
+				</Field>
+				<Field Name="strPhone">
+					<DataField>strPhone</DataField>
+				</Field>
+				<Field Name="strCellPhone">
+					<DataField>strCellPhone</DataField>
+				</Field>
+				<Field Name="strFax">
+					<DataField>strFax</DataField>
+				</Field>
+				<Field Name="strEmail">
+					<DataField>strEmail</DataField>
+				</Field>
+				<Field Name="strVAT">
+					<DataField>strVAT</DataField>
+				</Field>
+				<Field Name="strCK">
+					<DataField>strCK</DataField>
+				</Field>
+				<Field Name="decBalDue">
+					<DataField>decBalDue</DataField>
+				</Field>
+				<Field Name="decYTDPurch">
+					<DataField>decYTDPurch</DataField>
+				</Field>
+				<Field Name="decOpenOrders">
+					<DataField>decOpenOrders</DataField>
+				</Field>
+				<Field Name="intDelMethod">
+					<DataField>intDelMethod</DataField>
+				</Field>
+				<Field Name="bitCreditCtrl">
+					<DataField>bitCreditCtrl</DataField>
+				</Field>
+				<Field Name="decCreditLimit">
+					<DataField>decCreditLimit</DataField>
+				</Field>
+				<Field Name="bitCreditHold">
+					<DataField>bitCreditHold</DataField>
+				</Field>
+				<Field Name="bitInactive">
+					<DataField>bitInactive</DataField>
+				</Field>
+				<Field Name="dteUpdated">
+					<DataField>dteUpdated</DataField>
+				</Field>
+				<Field Name="strContact">
+					<DataField>strContact</DataField>
+				</Field>
+				<Field Name="strField1">
+					<DataField>strField1</DataField>
+				</Field>
+				<Field Name="strField2">
+					<DataField>strField2</DataField>
+				</Field>
+				<Field Name="strField3">
+					<DataField>strField3</DataField>
+				</Field>
+				<Field Name="strField4">
+					<DataField>strField4</DataField>
+				</Field>
+				<Field Name="strField5">
+					<DataField>strField5</DataField>
+				</Field>
+				<Field Name="strField6">
+					<DataField>strField6</DataField>
+				</Field>
+				<Field Name="strTaxCode">
+					<DataField>strTaxCode</DataField>
+				</Field>
+				<Field Name="dteSince">
+					<DataField>dteSince</DataField>
+				</Field>
+				<Field Name="strNotes">
+					<DataField>strNotes</DataField>
+				</Field>
+				<Field Name="strPricelist">
+					<DataField>strPricelist</DataField>
+				</Field>
+				<Field Name="uID">
+					<DataField>uID</DataField>
+				</Field>
+				<Field Name="decIntRate">
+					<DataField>decIntRate</DataField>
+				</Field>
+				<Field Name="strCustDesc">
+					<DataField>strCustDesc</DataField>
+				</Field>
+				<Field Name="strCountry">
+					<DataField>strCountry</DataField>
+				</Field>
+				<Field Name="strTerm">
+					<DataField>strTerm</DataField>
+				</Field>
+				<Field Name="intDept">
+					<DataField>intDept</DataField>
+				</Field>
+				<Field Name="strCurrency">
+					<DataField>strCurrency</DataField>
+				</Field>
+				<Field Name="decBalDueF">
+					<DataField>decBalDueF</DataField>
+				</Field>
+				<Field Name="decYTDPurchF">
+					<DataField>decYTDPurchF</DataField>
+				</Field>
+				<Field Name="decOpenOrdersF">
+					<DataField>decOpenOrdersF</DataField>
+				</Field>
+				<Field Name="strField7">
+					<DataField>strField7</DataField>
+				</Field>
+				<Field Name="strField8">
+					<DataField>strField8</DataField>
+				</Field>
+				<Field Name="strField9">
+					<DataField>strField9</DataField>
+				</Field>
+				<Field Name="strField10">
+					<DataField>strField10</DataField>
+				</Field>
+				<Field Name="strField11">
+					<DataField>strField11</DataField>
+				</Field>
+				<Field Name="strField12">
+					<DataField>strField12</DataField>
+				</Field>
+				<Field Name="strEmailInv">
+					<DataField>strEmailInv</DataField>
+				</Field>
+				<Field Name="strEmailStat">
+					<DataField>strEmailStat</DataField>
+				</Field>
+				<Field Name="strCustCategory">
+					<DataField>strCustCategory</DataField>
+				</Field>
+				<Field Name="strCountryCode">
+					<DataField>strCountryCode</DataField>
+				</Field>
+				<Field Name="strTenderType">
+					<DataField>strTenderType</DataField>
+				</Field>
+				<Field Name="decTradeDiscPerc">
+					<DataField>decTradeDiscPerc</DataField>
+				</Field>
+				<Field Name="decCreditLimitOverride">
+					<DataField>decCreditLimitOverride</DataField>
+				</Field>
+				<Field Name="dteCreditLimitExpiryDate">
+					<DataField>dteCreditLimitExpiryDate</DataField>
+				</Field>
+				<Field Name="intPartialBackorders">
+					<DataField>intPartialBackorders</DataField>
+				</Field>
+				<Field Name="bitWithholdTax">
+					<DataField>bitWithholdTax</DataField>
+				</Field>
+				<Field Name="strWithholdTaxCode">
+					<DataField>strWithholdTaxCode</DataField>
+				</Field>
+				<Field Name="strINVFormDocName">
+					<DataField>strINVFormDocName</DataField>
+				</Field>
+				<Field Name="strORDFormDocName">
+					<DataField>strORDFormDocName</DataField>
+				</Field>
+				<Field Name="bitMatrixType">
+					<DataField>bitMatrixType</DataField>
+				</Field>
+				<Field Name="strMatrixType">
+					<DataField>strMatrixType</DataField>
+				</Field>
+				<Field Name="strParentCust">
+					<DataField>strParentCust</DataField>
+				</Field>
+				<Field Name="strValueBased">
+					<DataField>strValueBased</DataField>
+				</Field>
+				<Field Name="bitInvWorkflowNew">
+					<DataField>bitInvWorkflowNew</DataField>
+				</Field>
+				<Field Name="bitInvWorkflowDA">
+					<DataField>bitInvWorkflowDA</DataField>
+				</Field>
+				<Field Name="bitInvWorkflowSO">
+					<DataField>bitInvWorkflowSO</DataField>
+				</Field>
+				<Field Name="strWebsite">
+					<DataField>strWebsite</DataField>
+				</Field>
+				<Field Name="strRSTTerminalSync">
+					<DataField>strRSTTerminalSync</DataField>
+				</Field>
+				<Field Name="strContact2">
+					<DataField>strContact2</DataField>
+				</Field>
+				<Field Name="strSuburb">
+					<DataField>strSuburb</DataField>
+				</Field>
+				<Field Name="strEmailOso">
+					<DataField>strEmailOso</DataField>
+				</Field>
+				<Field Name="intNAPrintMethod">
+					<DataField>intNAPrintMethod</DataField>
+				</Field>
+				<Field Name="strDelMethodCode">
+					<DataField>strDelMethodCode</DataField>
+				</Field>
+				<Field Name="bitExclCommission">
+					<DataField>bitExclCommission</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT * FROM tblCustomers WHERE strCustName = @SQCustName</CommandText>
+				<DataSourceName>EntInvoice</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="SQCustName">
+						<Value>=Parameters!SQCustName.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dsEnt_Invoice4">
+			<Fields>
+				<Field Name="strPartNumber">
+					<DataField>strPartNumber</DataField>
+				</Field>
+				<Field Name="strDesc">
+					<DataField>strDesc</DataField>
+				</Field>
+				<Field Name="intType">
+					<DataField>intType</DataField>
+				</Field>
+				<Field Name="strCategory">
+					<DataField>strCategory</DataField>
+				</Field>
+				<Field Name="strAcctSet">
+					<DataField>strAcctSet</DataField>
+				</Field>
+				<Field Name="intExpAcct">
+					<DataField>intExpAcct</DataField>
+				</Field>
+				<Field Name="decCostOnPO">
+					<DataField>decCostOnPO</DataField>
+				</Field>
+				<Field Name="bitUseLPPOnPO">
+					<DataField>bitUseLPPOnPO</DataField>
+				</Field>
+				<Field Name="intReorderQty">
+					<DataField>intReorderQty</DataField>
+				</Field>
+				<Field Name="strBuyUnit">
+					<DataField>strBuyUnit</DataField>
+				</Field>
+				<Field Name="strStockUnit">
+					<DataField>strStockUnit</DataField>
+				</Field>
+				<Field Name="decBuyToStock">
+					<DataField>decBuyToStock</DataField>
+				</Field>
+				<Field Name="bitAllowPriceChg">
+					<DataField>bitAllowPriceChg</DataField>
+				</Field>
+				<Field Name="dteDateLastSale">
+					<DataField>dteDateLastSale</DataField>
+				</Field>
+				<Field Name="dteLastPurchase">
+					<DataField>dteLastPurchase</DataField>
+				</Field>
+				<Field Name="decLastPPUnit">
+					<DataField>decLastPPUnit</DataField>
+				</Field>
+				<Field Name="dteLastUpdated">
+					<DataField>dteLastUpdated</DataField>
+				</Field>
+				<Field Name="bitUseBOM">
+					<DataField>bitUseBOM</DataField>
+				</Field>
+				<Field Name="intBOMQty">
+					<DataField>intBOMQty</DataField>
+				</Field>
+				<Field Name="strAddInfo">
+					<DataField>strAddInfo</DataField>
+				</Field>
+				<Field Name="bitInactive">
+					<DataField>bitInactive</DataField>
+				</Field>
+				<Field Name="decSumAvail">
+					<DataField>decSumAvail</DataField>
+				</Field>
+				<Field Name="decSumAlloc">
+					<DataField>decSumAlloc</DataField>
+				</Field>
+				<Field Name="decSumOnHand">
+					<DataField>decSumOnHand</DataField>
+				</Field>
+				<Field Name="decSumValue">
+					<DataField>decSumValue</DataField>
+				</Field>
+				<Field Name="decSumOnOrder">
+					<DataField>decSumOnOrder</DataField>
+				</Field>
+				<Field Name="decSumOpenQty">
+					<DataField>decSumOpenQty</DataField>
+				</Field>
+				<Field Name="decSumOpenValue">
+					<DataField>decSumOpenValue</DataField>
+				</Field>
+				<Field Name="decSumValYearStart">
+					<DataField>decSumValYearStart</DataField>
+				</Field>
+				<Field Name="decSumQtyYearStart">
+					<DataField>decSumQtyYearStart</DataField>
+				</Field>
+				<Field Name="decSumAmtSoldYTD">
+					<DataField>decSumAmtSoldYTD</DataField>
+				</Field>
+				<Field Name="decSumAmtSoldLY">
+					<DataField>decSumAmtSoldLY</DataField>
+				</Field>
+				<Field Name="decSumQtySoldYTD">
+					<DataField>decSumQtySoldYTD</DataField>
+				</Field>
+				<Field Name="decSumQtySoldLY">
+					<DataField>decSumQtySoldLY</DataField>
+				</Field>
+				<Field Name="decSumCOGSYTD">
+					<DataField>decSumCOGSYTD</DataField>
+				</Field>
+				<Field Name="decSumCOGSLY">
+					<DataField>decSumCOGSLY</DataField>
+				</Field>
+				<Field Name="intSumNumTransYTD">
+					<DataField>intSumNumTransYTD</DataField>
+				</Field>
+				<Field Name="intSumNumTransLY">
+					<DataField>intSumNumTransLY</DataField>
+				</Field>
+				<Field Name="bitAutoBuild">
+					<DataField>bitAutoBuild</DataField>
+				</Field>
+				<Field Name="strField1">
+					<DataField>strField1</DataField>
+				</Field>
+				<Field Name="strField2">
+					<DataField>strField2</DataField>
+				</Field>
+				<Field Name="strField3">
+					<DataField>strField3</DataField>
+				</Field>
+				<Field Name="strField4">
+					<DataField>strField4</DataField>
+				</Field>
+				<Field Name="strField5">
+					<DataField>strField5</DataField>
+				</Field>
+				<Field Name="strField6">
+					<DataField>strField6</DataField>
+				</Field>
+				<Field Name="strBarCode">
+					<DataField>strBarCode</DataField>
+				</Field>
+				<Field Name="decStandardCost">
+					<DataField>decStandardCost</DataField>
+				</Field>
+				<Field Name="strBinLoc">
+					<DataField>strBinLoc</DataField>
+				</Field>
+				<Field Name="bitItemNumConvUsed">
+					<DataField>bitItemNumConvUsed</DataField>
+				</Field>
+				<Field Name="strSellUnit">
+					<DataField>strSellUnit</DataField>
+				</Field>
+				<Field Name="strSellStockUnit">
+					<DataField>strSellStockUnit</DataField>
+				</Field>
+				<Field Name="decSellFromStock">
+					<DataField>decSellFromStock</DataField>
+				</Field>
+				<Field Name="strItemSegment1">
+					<DataField>strItemSegment1</DataField>
+				</Field>
+				<Field Name="strItemSegment2">
+					<DataField>strItemSegment2</DataField>
+				</Field>
+				<Field Name="strItemSegment3">
+					<DataField>strItemSegment3</DataField>
+				</Field>
+				<Field Name="strItemSegment4">
+					<DataField>strItemSegment4</DataField>
+				</Field>
+				<Field Name="strInvNumConv">
+					<DataField>strInvNumConv</DataField>
+				</Field>
+				<Field Name="bitInvSerialType">
+					<DataField>bitInvSerialType</DataField>
+				</Field>
+				<Field Name="strInvSerialType">
+					<DataField>strInvSerialType</DataField>
+				</Field>
+				<Field Name="decRepairCharge">
+					<DataField>decRepairCharge</DataField>
+				</Field>
+				<Field Name="strBarCode2">
+					<DataField>strBarCode2</DataField>
+				</Field>
+				<Field Name="bitVoucherEnabled">
+					<DataField>bitVoucherEnabled</DataField>
+				</Field>
+				<Field Name="strVoucherCode">
+					<DataField>strVoucherCode</DataField>
+				</Field>
+				<Field Name="decDefSaleQty">
+					<DataField>decDefSaleQty</DataField>
+				</Field>
+				<Field Name="strExtendedDesc">
+					<DataField>strExtendedDesc</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnSI">
+					<DataField>bitInvExtDescOnSI</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnSO">
+					<DataField>bitInvExtDescOnSO</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnSQ">
+					<DataField>bitInvExtDescOnSQ</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnSFHQ">
+					<DataField>bitInvExtDescOnSFHQ</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnCR">
+					<DataField>bitInvExtDescOnCR</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnPI">
+					<DataField>bitInvExtDescOnPI</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnPO">
+					<DataField>bitInvExtDescOnPO</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnPQ">
+					<DataField>bitInvExtDescOnPQ</DataField>
+				</Field>
+				<Field Name="bitWebstoreItem">
+					<DataField>bitWebstoreItem</DataField>
+				</Field>
+				<Field Name="strDimProCode">
+					<DataField>strDimProCode</DataField>
+				</Field>
+				<Field Name="strRSTTerminalSync">
+					<DataField>strRSTTerminalSync</DataField>
+				</Field>
+				<Field Name="intDecimalQuantity">
+					<DataField>intDecimalQuantity</DataField>
+				</Field>
+				<Field Name="strBOMNotes">
+					<DataField>strBOMNotes</DataField>
+				</Field>
+				<Field Name="bitInvExtDescOnBRQ">
+					<DataField>bitInvExtDescOnBRQ</DataField>
+				</Field>
+				<Field Name="decMass">
+					<DataField>decMass</DataField>
+				</Field>
+				<Field Name="decVolumetricWeight">
+					<DataField>decVolumetricWeight</DataField>
+				</Field>
+				<Field Name="strUnitOfMeasure">
+					<DataField>strUnitOfMeasure</DataField>
+				</Field>
+				<Field Name="decW">
+					<DataField>decW</DataField>
+				</Field>
+				<Field Name="decH">
+					<DataField>decH</DataField>
+				</Field>
+				<Field Name="decD">
+					<DataField>decD</DataField>
+				</Field>
+				<Field Name="decCube">
+					<DataField>decCube</DataField>
+				</Field>
+				<Field Name="decFactor">
+					<DataField>decFactor</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>[dbo].[tblInvLocations]</CommandText>
+				<DataSourceName>EntInvoice</DataSourceName>
+				<CommandType>StoredProcedure</CommandType>
+				<QueryParameters>
+					<QueryParameter Name="@SQLocationCriteria">
+						<Value>=Parameters!SQLocationCriteria.Value</Value>
+					</QueryParameter>
+					<QueryParameter Name="@SQDocNumber">
+						<Value>=Parameters!SQDocNumber.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+		<DataSet Name="dsEnt_Invoice5">
+			<Fields>
+				<Field Name="strInvDocID">
+					<DataField>strInvDocID</DataField>
+				</Field>
+				<Field Name="intLineNo">
+					<DataField>intLineNo</DataField>
+				</Field>
+				<Field Name="strPartNumber">
+					<DataField>strPartNumber</DataField>
+				</Field>
+				<Field Name="strLocation">
+					<DataField>strLocation</DataField>
+				</Field>
+				<Field Name="strPartDesc">
+					<DataField>strPartDesc</DataField>
+				</Field>
+				<Field Name="decQty">
+					<DataField>decQty</DataField>
+				</Field>
+				<Field Name="strUnit">
+					<DataField>strUnit</DataField>
+				</Field>
+				<Field Name="intType">
+					<DataField>intType</DataField>
+				</Field>
+				<Field Name="decPriceEaExc">
+					<DataField>decPriceEaExc</DataField>
+				</Field>
+				<Field Name="decLineTotExc">
+					<DataField>decLineTotExc</DataField>
+				</Field>
+				<Field Name="decLineTaxAmt">
+					<DataField>decLineTaxAmt</DataField>
+				</Field>
+				<Field Name="decPriceEaInc">
+					<DataField>decPriceEaInc</DataField>
+				</Field>
+				<Field Name="decLineTotInc">
+					<DataField>decLineTotInc</DataField>
+				</Field>
+				<Field Name="strTaxCode">
+					<DataField>strTaxCode</DataField>
+				</Field>
+				<Field Name="imgTaxObj">
+					<DataField>imgTaxObj</DataField>
+				</Field>
+				<Field Name="strCurrency">
+					<DataField>strCurrency</DataField>
+				</Field>
+				<Field Name="bitIsForeign">
+					<DataField>bitIsForeign</DataField>
+				</Field>
+				<Field Name="decPriceEaExcF">
+					<DataField>decPriceEaExcF</DataField>
+				</Field>
+				<Field Name="decLineTotExcF">
+					<DataField>decLineTotExcF</DataField>
+				</Field>
+				<Field Name="decLineTaxAmtF">
+					<DataField>decLineTaxAmtF</DataField>
+				</Field>
+				<Field Name="decEaIncTaxF">
+					<DataField>decEaIncTaxF</DataField>
+				</Field>
+				<Field Name="decTotIncTaxF">
+					<DataField>decTotIncTaxF</DataField>
+				</Field>
+				<Field Name="strInvField1">
+					<DataField>strInvField1</DataField>
+				</Field>
+				<Field Name="strInvField2">
+					<DataField>strInvField2</DataField>
+				</Field>
+				<Field Name="strInvField3">
+					<DataField>strInvField3</DataField>
+				</Field>
+				<Field Name="strInvField4">
+					<DataField>strInvField4</DataField>
+				</Field>
+				<Field Name="strInvField5">
+					<DataField>strInvField5</DataField>
+				</Field>
+				<Field Name="strInvField6">
+					<DataField>strInvField6</DataField>
+				</Field>
+				<Field Name="strLineField1">
+					<DataField>strLineField1</DataField>
+				</Field>
+				<Field Name="strLineField2">
+					<DataField>strLineField2</DataField>
+				</Field>
+				<Field Name="strLineField3">
+					<DataField>strLineField3</DataField>
+				</Field>
+				<Field Name="strLineField4">
+					<DataField>strLineField4</DataField>
+				</Field>
+				<Field Name="strLineField5">
+					<DataField>strLineField5</DataField>
+				</Field>
+				<Field Name="strLineField6">
+					<DataField>strLineField6</DataField>
+				</Field>
+				<Field Name="strLineField7">
+					<DataField>strLineField7</DataField>
+				</Field>
+				<Field Name="strLineField8">
+					<DataField>strLineField8</DataField>
+				</Field>
+				<Field Name="strLineField9">
+					<DataField>strLineField9</DataField>
+				</Field>
+				<Field Name="strLineField10">
+					<DataField>strLineField10</DataField>
+				</Field>
+				<Field Name="strLineField11">
+					<DataField>strLineField11</DataField>
+				</Field>
+				<Field Name="strLineField12">
+					<DataField>strLineField12</DataField>
+				</Field>
+				<Field Name="decLineDiscPerc">
+					<DataField>decLineDiscPerc</DataField>
+				</Field>
+				<Field Name="decLineDiscAmt">
+					<DataField>decLineDiscAmt</DataField>
+				</Field>
+				<Field Name="decLineDiscAmtF">
+					<DataField>decLineDiscAmtF</DataField>
+				</Field>
+				<Field Name="bitDiscountTax">
+					<DataField>bitDiscountTax</DataField>
+				</Field>
+				<Field Name="decStockQty">
+					<DataField>decStockQty</DataField>
+				</Field>
+				<Field Name="strStockUnit">
+					<DataField>strStockUnit</DataField>
+				</Field>
+				<Field Name="decStandardCost">
+					<DataField>decStandardCost</DataField>
+				</Field>
+				<Field Name="decLastPPUnit">
+					<DataField>decLastPPUnit</DataField>
+				</Field>
+				<Field Name="strSalesName">
+					<DataField>strSalesName</DataField>
+				</Field>
+				<Field Name="decCOGS">
+					<DataField>decCOGS</DataField>
+				</Field>
+				<Field Name="decSOQty">
+					<DataField>decSOQty</DataField>
+				</Field>
+				<Field Name="decSOQtyRemain">
+					<DataField>decSOQtyRemain</DataField>
+				</Field>
+				<Field Name="strPartExtendedDesc">
+					<DataField>strPartExtendedDesc</DataField>
+				</Field>
+				<Field Name="decItemWeight">
+					<DataField>decItemWeight</DataField>
+				</Field>
+				<Field Name="decVolumetricWeight">
+					<DataField>decVolumetricWeight</DataField>
+				</Field>
+				<Field Name="bitContainerItem">
+					<DataField>bitContainerItem</DataField>
+				</Field>
+				<Field Name="bitDelCost">
+					<DataField>bitDelCost</DataField>
+				</Field>
+				<Field Name="intBillingMethod">
+					<DataField>intBillingMethod</DataField>
+				</Field>
+				<Field Name="uidTransactionFieldID">
+					<DataField>uidTransactionFieldID</DataField>
+				</Field>
+				<Field Name="uidContainerItem">
+					<DataField>uidContainerItem</DataField>
+				</Field>
+				<Field Name="decUsedQty">
+					<DataField>decUsedQty</DataField>
+				</Field>
+				<Field Name="strProjNumber">
+					<DataField>strProjNumber</DataField>
+				</Field>
+				<Field Name="strProjName">
+					<DataField>strProjName</DataField>
+				</Field>
+			</Fields>
+			<Query>
+				<CommandText>SELECT tblInvoiceDocDT.*, tblInvoiceDocDTPrj.strProjNumber, tblProjects.strProjName FROM tblInvoiceDocDT LEFT JOIN tblInvoiceDocDTPrj ON tblInvoiceDocDT.strInvDocID = tblInvoiceDocDTPrj.strInvDocID AND tblInvoiceDocDT.intLineNo = tblInvoiceDocDTPrj.intLineNo LEFT JOIN tblProjects ON tblInvoiceDocDTPrj.strProjNumber = tblProjects.strProjNumber WHERE tblInvoiceDocDT.strInvDocID = @SQDocNumber and  bitDiscountTax = 1 ORDER BY tblInvoiceDocDT.intLineNo
+</CommandText>
+				<DataSourceName>EntInvoice</DataSourceName>
+				<QueryParameters>
+					<QueryParameter Name="@SQDocNumber ">
+						<Value>=Parameters!SQDocNumber.Value</Value>
+					</QueryParameter>
+				</QueryParameters>
+			</Query>
+		</DataSet>
+	</DataSets>
+	<CustomProperties>
+		<CustomProperty>
+			<Name>PaperOrientation</Name>
+			<Value>Portrait</Value>
+		</CustomProperty>
+	</CustomProperties>
+</Report>
